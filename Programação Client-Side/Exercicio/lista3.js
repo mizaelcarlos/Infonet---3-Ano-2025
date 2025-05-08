@@ -112,21 +112,79 @@
 // }
 
 //Questão 1 da lista 4
-var nomes = [
-  "Henzo Fernadez",
-  "Antony",
-  "Juliana",
-  "Guilherme",
-  "Arthur",
-  "Lidia",
-  "Alessandra",
-];
+// var nomes = [
+//   "Henzo Fernadez",
+//   "Antony",
+//   "Juliana",
+//   "Guilherme",
+//   "Arthur",
+//   "Lidia",
+//   "Alessandra",
+// ];
 
-for (let n = 0; n < nomes.length; n++) {
-  console.log(nomes[n]);
-}
+// for (let n = 0; n < nomes.length; n++) {
+//   console.log(nomes[n]);
+// }
 //Questão 2 lista 4
-console.log(nomes[2]);
+// console.log(nomes[2]);
 
 //Questão 3 lista 4
-nomes.push("Abner");
+// nomes.push("Abner");
+
+// console.log(misto[2]);
+// console.log(misto.length);
+
+// var valores = [];
+// var valores1 = array();
+// var misto = [400, "Papai", true, 34.45, 45];
+// misto.push(500);
+// misto.push(600);
+// misto.pop();
+// misto.shift();
+// misto.unshift(450);
+
+// console.log(misto[0]);
+// console.log(misto[1]);
+
+// for (let n = 0; n < misto.length; n++) {
+//   console.log(misto[n]);
+// }
+
+// console.log(misto.indexOf("Papai"));
+
+//Questão 6
+
+// var numeros = [23, 45, 67, 89];
+//224
+
+// var soma = 0;
+// for (let n = 0; n < numeros.length; n++) {
+//   soma = soma + numeros[n];
+// }
+// console.log(soma);
+
+// numeros[2] = 45;
+
+// var letras = ["a", "b", "c"];
+
+// letras[1] = "d";
+
+// letras.forEach((v, u) => {
+//   console.log(i);
+// });
+
+// for (let n = 0; n < letras.length; n++) {
+//   console.log(letras[n]);
+//   console.log(n);
+// }
+
+// array1.forEach((valor, posicao) => {
+//   console.log(posicao);
+// });
+
+var numeros = [7, 8, 9];
+var soma = 0;
+numeros.forEach((valor) => {
+  soma = soma + valor;
+});
+console.log(soma / numeros.length);
