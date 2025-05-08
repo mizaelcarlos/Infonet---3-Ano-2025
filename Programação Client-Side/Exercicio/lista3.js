@@ -182,9 +182,59 @@
 //   console.log(posicao);
 // });
 
-var numeros = [7, 8, 9];
-var soma = 0;
-numeros.forEach((valor) => {
-  soma = soma + valor;
-});
-console.log(soma / numeros.length);
+// var numeros = [7, 8, 9];
+// var soma = 0;
+// numeros.forEach((valor) => {
+//   soma = soma + valor;
+// });
+// console.log(soma / numeros.length);
+
+// var aluno = {
+//   nome: "Gustavo",
+//   idade: "16",
+//   endereco: "Rua do telegrafo, n 1456",
+// };
+
+// console.log(aluno.nome);
+
+// var dia = 8;
+// var mes = 5;
+// var ano = 2025;
+
+// var texto = `Hoje ${dia}/${mes}/${ano} estudamos na primeira parte Arrays`;
+// var texto =
+// "Hoje " + dia + "/" + mes + "/" + ano + " estudamos na primeira parte Arrays";
+// var texto = "Hoje estudamos na primeira parte Arrays";
+
+// console.log(texto);
+
+var n1 = 23;
+var n2 = 45;
+
+function somar(numero1, numero2) {
+  let soma = numero1 + numero2;
+  return soma;
+}
+
+// console.log(somar(2, 4));
+
+// console.log(somar(n1, n2));
+
+function exibirCabecalho(texto) {
+  console.log(texto);
+}
+
+// exibirCabecalho("3º Ano de Ensino Médio EMI");
+
+function verificarPrimo(numero) {
+  if (
+    (numero % 1 == 0 && numero % numero == 0 && numero % 2 != 0) ||
+    numero == 2
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(verificarPrimo(3));
