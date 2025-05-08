@@ -85,10 +85,48 @@
 //   fatorial = fatorial * n;
 // }
 // console.log(fatorial);
-var soma = 0;
-for (let n = 1; n <= 100; n++) {
-  if (n % 11 == 0) {
-    soma++;
-  }
+// var soma = 0;
+// for (let n = 1; n <= 100; n++) {
+//   if (n % 11 == 0) {
+//     soma++;
+//   }
+// }
+// console.log(soma);
+
+// numeros.length;
+// console.log(numeros[0]);
+// var valores = [];
+// var valores2 = array();
+
+// var misto = [23, "Théo Hernandez", true];
+
+// var numeros = [34, 45, 5, 2, 1];
+// numeros.push(200);
+// numeros.push(300);
+// numeros.pop();
+// numeros.shift();
+// numeros.unshift(32);
+// console.log(numeros.indexOf(1));
+// for (let n = 0; n < numeros.length; n++) {
+//   console.log(numeros[n]);
+// }
+
+//Questão 1 da lista 4
+var nomes = [
+  "Henzo Fernadez",
+  "Antony",
+  "Juliana",
+  "Guilherme",
+  "Arthur",
+  "Lidia",
+  "Alessandra",
+];
+
+for (let n = 0; n < nomes.length; n++) {
+  console.log(nomes[n]);
 }
-console.log(soma);
+//Questão 2 lista 4
+console.log(nomes[2]);
+
+//Questão 3 lista 4
+nomes.push("Abner");
