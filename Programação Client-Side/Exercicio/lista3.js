@@ -189,17 +189,46 @@
 // });
 // console.log(soma / numeros.length);
 
-// var aluno = {
-//   nome: "Gustavo",
-//   idade: "16",
-//   endereco: "Rua do telegrafo, n 1456",
-// };
+var aluno = {
+  nome: "Gustavo",
+  idade: 16,
+  endereco: "Rua do telegrafo, n 1456",
+  "telefone-fixo": "863222222",
+};
+
+aluno["telefone-fixo"];
+aluno.endereco;
 
 // console.log(aluno.nome);
 
-// var dia = 8;
-// var mes = 5;
-// var ano = 2025;
+var dia = 8;
+var mes = 5;
+var ano = 2025;
+
+var apresentacao =
+  dia + "/" + mes + "/" + ano + " O Museu virtual, uma experiencia imersiva";
+var apresentacao = "O Museu virtual, uma experiencia imersiva";
+var apresentacao = `${dia}/${mes}/${ano} O Museu virtual, uma experiencia imersiva`;
+
+function verificarParOuImpar(numero) {
+  if (numero % 2 == 0) {
+    console.log("par");
+  } else {
+    console.log("Impar");
+  }
+}
+
+var n1 = 20;
+
+verificarParOuImpar(n1);
+
+function imprimeSaudacao() {
+  console.log("Bom dia");
+}
+
+function somar(numero1, numero2) {
+  return numero1 + numero2;
+}
 
 // var texto = `Hoje ${dia}/${mes}/${ano} estudamos na primeira parte Arrays`;
 // var texto =
@@ -237,4 +266,24 @@ function verificarPrimo(numero) {
   }
 }
 
-console.log(verificarPrimo(3));
+// console.log(verificarPrimo(3));
+
+// var numeros = [4, 7, 8, 9, 10];
+// for (let n = 0; n < numeros.length; n++) {
+//   if (n % 2 != 0) {
+//     console.log(numeros[n]);
+//   }
+// }
+function maiorNumero(array) {
+  let maior = 0;
+  array.forEach((valor, index) => {
+    if (valor > maior) {
+      maior = valor;
+    }
+  });
+
+  return maior;
+}
+
+array = [34, 45, 23, 12];
+console.log(maiorNumero(array));
