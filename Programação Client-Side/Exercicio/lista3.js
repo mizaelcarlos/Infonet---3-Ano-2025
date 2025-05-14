@@ -237,8 +237,8 @@ function somar(numero1, numero2) {
 
 // console.log(texto);
 
-var n1 = 23;
-var n2 = 45;
+// var n1 = 23;
+// var n2 = 45;
 
 function somar(numero1, numero2) {
   let soma = numero1 + numero2;
@@ -285,5 +285,115 @@ function maiorNumero(array) {
   return maior;
 }
 
-array = [34, 45, 23, 12];
-console.log(maiorNumero(array));
+// array = [34, 45, 23, 12];
+// console.log(maiorNumero(array));
+
+// var teste = document.getElementById("teste");
+// teste.style.color = red;
+
+//Tabela verdade
+
+function verificarPrimo(numero) {
+  if (
+    (numero % 1 == 0 && numero % numero == 0 && numero % 2 != 0) ||
+    numero == 2
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function menorNumero(array) {
+  let menor = 0;
+  array.forEach((valor, index) => {
+    if (index == 0) {
+      menor = valor;
+    }
+    if (valor < menor) {
+      menor = valor;
+    }
+  });
+
+  return menor;
+}
+
+var numeros = [23, 45, 56, 345, 67, 4];
+
+// console.log(menorNumero(numeros));
+
+function converterTemperatura(temperaturaCelsius) {
+  return (temperaturaCelsius * 9) / 5 + 32;
+}
+
+// console.log(converterTemperatura(35));
+
+function contarPalavras(palavra) {
+  return palavra.length;
+}
+
+var texto = "Sexta-Feira";
+// console.log(contarPalavras(texto));
+
+function multiplicarComLimite(numero1, numero2, limite) {
+  let multiplicacao = numero1 * numero2;
+  if (multiplicacao > limite) {
+    return limite;
+  } else {
+    return multiplicacao;
+  }
+}
+// console.log(multiplicarComLimite(40, 20, 500));
+
+function parOuImpar(numero) {
+  if (numero % 2 == 0) {
+    return "Par";
+  } else {
+    return "Impar";
+  }
+}
+
+console.log(parOuImpar(4));
+
+function mediaNotas(notas) {
+  let soma = 0;
+  for (let n = 0; n < notas.length; n++) {
+    soma = soma + notas[n];
+  }
+
+  return soma / notas.length;
+}
+
+var notas = [8, 7, 6, 5];
+// console.log(mediaNotas(notas));
+
+var texto = "NOTEBOOK ACER CORE I5";
+console.log(texto.toLowerCase()); // toLowerCase converte pra minuscula
+console.log(texto.toUpperCase()); // toUpperCase converte pra maisucula
+
+function filtrarPositivos(numeros) {
+  let numeros_positivos = [];
+  for (let n = 0; n < numeros.length; n++) {
+    if (numeros[n] > 0) {
+      numeros_positivos.push(numeros[n]);
+    }
+  }
+  return numeros_positivos;
+}
+
+var numeros = [-1, 2, -4, -5, 10, 24, 45];
+// console.log(filtrarPositivos(numeros));
+
+function verificarParesImpares(numeroLimite) {
+  let array = [];
+  for (let n = 1; n < numeroLimite; n++) {
+    if (n % 2 == 0) {
+      array.push(`${n} - Par`);
+    } else {
+      array.push(`${n} - Impar`);
+    }
+  }
+  return array;
+}
+
+console.log(verificarParesImpares(100));
