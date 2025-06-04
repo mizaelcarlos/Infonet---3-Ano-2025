@@ -1,4 +1,4 @@
-const timeoutId = setTimeout(() => {
+var timeoutId = setTimeout(() => {
   console.log("Este código não será executado");
 }, 3000);
 
