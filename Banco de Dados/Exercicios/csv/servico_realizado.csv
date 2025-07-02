@@ -1,0 +1,5 @@
+servico_id,ordem_id,equipamento_id,descricao_servico,valor
+1,1,1,Troca de tela,350.00
+2,1,1,Atualização de software,100.00
+3,2,2,Substituição de HD,450.00
+4,3,3,Limpeza interna,150.00

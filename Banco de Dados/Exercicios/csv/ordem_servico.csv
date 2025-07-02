@@ -1,0 +1,4 @@
+ordem_id,cliente_id,data_abertura,status
+1,1,2025-06-30,Em andamento
+2,2,2025-07-01,Concluído
+3,3,2025-07-02,Pendente
