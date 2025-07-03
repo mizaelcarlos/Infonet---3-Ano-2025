@@ -1,0 +1,5 @@
+Crie comandos de update pras seguintes situações
+1 - Atualize o número de telefone da cliente Ana Paula para 11912345678.
+2 - O e-mail do cliente Carlos Mendes estava incorreto. Atualize para: carlos.m@email.com
+3 - A empresa atualizou a marca do Notebook Pavilion 15 de HP para Dell. Faça essa alteração na tabela de equipamentos.
+4 - O modelo do Tablet da Apple foi substituído por iPad Pro. Atualize essa informação.
