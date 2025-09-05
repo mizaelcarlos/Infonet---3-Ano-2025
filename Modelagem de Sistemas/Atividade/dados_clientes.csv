@@ -1,0 +1,39 @@
+﻿"Nome do Cliente";CPF;"Data de Nasc.";Telefone;Email;"Valor da Compra";"Data Venda"
+"Carlos Mendes";987.654.321-00;21/07/1975;(21)98888-1234;carlos@dominio.com;"R$ 2.300,00";05-07-2023
+"Ana Pereira";98765432100;07-11-1985;21999998888;ana@exemplo.com;2300;2023/07/05
+"CARLOS MENDES";987.654.321-00;21/07/1975;"(21) 98888-1234";carlos@dominio.com;R$2.300;07/05/2023
+"Fernanda Lima";321.654.987-99;1992-12-10;(31)97777-6666;fernanda.lima@mail.com;"R$ 1.250,50";12/01/2023
+;;05/05/1990;;sememail@teste.com;"R$ 765,00";
+"Lucas Almeida";22233344455;30/09/1988;11987654321;lucasalmeida@gmailcom;890.75;2023-11-10
+"LUCAS ALMEIDA";222.333.444-55;30/09/1988;(11)98765-4321;lucasalmeida@gmail.com;"R$ 890,75";10-11-2023
+"Patrícia Rocha";55566677788;17-08-1979;(41)99999-1111;patricia_rocha@teste;R$1.780,00;17/08/2023
+"Eduardo Castro";111.222.333-44;10/01/1982;(31)98888-2222;edu.cast@gmail.com;"R$ 3.450,00";2024-01-10
+"Juliana Matos";44455566677;1987-03-25;21911112222;julianamatos@;3450;01-10-2024
+"EDUARDO CASTRO";111.222.333-44;10/01/1982;"(31) 98888-2222";edu.cast@gmail.com;R$3.450;10/01/2024
+"Vinícius Lopes";333.222.111-00;15-04-1991;(85)99999-3333;vinicius@lopes.com;"R$ 2.100,00";2023/12/01
+;;22/08/1994;;sem.nome@anonimo.com;"R$ 999,99";
+"Mariana Silva";77788899900;05/07/1983;11988887777;mariana.silva@@email.com;2100;12-12-2023
+"Marcos Paulo";11122233399;30-10-1976;(61)91234-5678;marcos.paulo@email.com;"R$ 1.100,00";2024-05-05
+"Renata Dias";222.111.333-66;06/06/1990;61999993333;renata@dias.com.br;"R$ 1.350,75";2023-09-09
+"Felipe Nogueira";88899977766;12.12.1985;(31)91111-2222;felipen@teste.com;"R$ 2.000";09-09-2023
+"Beatriz Ramos";123.321.123-12;03/03/1993;31999998888;beatriz_ramos@mail.com;"R$ 1.999,99";2024/03/03
+"Aline Torres";99988877766;1980-01-15;(21)91111-1111;aline.torres@email.com;"R$ 1.200,00";2024-01-15
+"Roberto Lima";00011122233;14/02/1989;21999990000;roberto.lima@;1200;15/01/2024
+"ALINE TORRES";999.888.777-66;1980/01/15;"(21) 91111-1111";aline.torres@email.com;R$1.200;15-01-2024
+"Tatiane Souza";12345678911;25-03-1990;(31)99887-6655;tatiane_souza@gmailcom;"R$ 875,50";2023/11/25
+;;1991-06-01;;semnome@teste.com;"R$ 540,00";
+"Bruno Rocha";456.789.123-00;12/04/1984;21988887777;bruno@rocha.com;"R$ 3.300,00";2024-02-12
+"BRUNO ROCHA";45678912300;12-04-1984;(21)98888-7777;bruno@rocha.com;3300;12/02/2024
+"Camila Reis";32165498711;1987/07/20;(11)91234-1111;camila.reis@mailcom;"R$ 999,99";20-07-2023
+"Gabriel Almeida";22211100099;1995-12-05;11999998888;gabrielalmeida@;980.90;2023-12-05
+"Luciana Castro";78965412300;03/09/1990;(71)98888-8888;luciana.castro@email.com;R$1.800,00;2024-03-09
+"LUCIANA CASTRO";789.654.123-00;03-09-1990;71988888888;luciana.castro@email.com;1800;09/03/2024
+"João Pedro";33322211144;15.05.1986;85999997777;joao.pedro@;"R$ 1.250";15/05/2023
+"Cláudia Mendes";99900088877;2000-01-01;11912345678;claudia.mendes@mail.com;"R$ 1.100,00";01-01-2024
+;;01-01-1999;;anonimo@email.com;"R$ 789,90";
+"Renan Oliveira";88877766655;10/08/1988;11987654321;renan.oliveira@mail;2.300,00;10/08/2023
+"Vitória Nunes";123.987.456-00;28-02-1992;(11)97777-8888;vitoria.nunes@email.com;"R$ 1.950,00";28/02/2024
+"VITÓRIA NUNES";12398745600;1992/02/28;11977778888;vitoria.nunes@email.com;1950;2024-02-28
+"Tiago Ferreira";11144477722;13/03/1993;(61)93333-4444;tiago.ferreira@mail.com;"R$ 999,00";13/03/2024
+"Débora Martins";222.555.888-99;18-10-1985;21987651234;debora@;890;18-10-2024
+"Felipe Moreira";44455566600;1990/06/15;11988889999;felipemoreira@;"R$ 1.700,00";15/06/2023
