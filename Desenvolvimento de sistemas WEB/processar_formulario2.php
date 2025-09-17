@@ -15,11 +15,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // echo "Senha: $senha";
 
 
-    $genero = $_POST['genero'];
-    echo "Gênero: $genero <br>";
+    // $genero = $_POST['genero'];
+    // echo "Gênero: $genero <br>";
 
 
-    echo 'Termos:' .  isset($_POST['aceito']) . '<br>';
+    // echo 'Termos:' .  isset($_POST['aceito']) . '<br>';
 
 
     // var_dump($_POST['interesses']);
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // }
 
 
-    echo $_POST['estado'];
+    // echo $_POST['estado'];
     // echo "Estado: " . ($estado ? $estado : "Não selecionado") . "<br>";
 
 
@@ -52,4 +52,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // } else {
     //     echo "Foto: Nenhuma enviada ou erro no upload.<br>";
     // }
+
+    $data_nascimento = $_POST['data_nascimento'];
+    //2025-09-12
+    //12/09/2025
+    $tempo_em_php = strtotime($data_nascimento);
+    $data_formatada = date("d/m/Y", $tempo_em_php);
+    echo $data_formatada;
 }

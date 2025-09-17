@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário de cadastro</h1>
+    <form action="q10.php" method="post">
+        <label for="">Nome</label>
+        <input type="text" name="nome" id="nome">
+        <br>
+        <label for="">Email</label>
+        <input type="text" name="email" id="email">
+        <br>
+        <label for="">CPF</label>
+        <input type="text" name="cpf" id="cpf">
+        <br>
+        <label for="">Telefone</label>
+        <input type="text" name="telefone" id="telefone">
+        <br>
+        <label for="">Turno preferido</label>
+        <br>
+        <label for="">Manhã</label>
+        <input type="radio" name="turno" id="turno" value="manhã">
+        <label for="">Tarde</label>
+        <input type="radio" name="turno" id="turno" value="tarde">
+        <label for="">Noite</label>
+        <input type="radio" name="turno" id="turno" value="noite">
+        <br>
+        <label for="">Workshop</label>
+        <br>
+        <label for="">Robótica</label>
+        <input type="checkbox" name="workshop[]" id="workshop" value="robótica">
+        <br>
+        <label for="">Programação</label>
+        <input type="checkbox" name="workshop[]" id="workshop" value="programação">
+        <br>
+        <label for="">Design</label>
+        <input type="checkbox" name="workshop[]" id="workshop" value="design">
+        <br>
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>
