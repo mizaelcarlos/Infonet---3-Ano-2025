@@ -17,7 +17,8 @@ while ($linha = $resultados->fetch_assoc()) {
     echo '<td>' . $linha['id'] . '</td>';
     echo '<td>' . $linha['nome'] . '</td>';
     echo '<td>' . $linha['email'] . '</td>';
-    echo '<td><a href="editar.php&id=' . $linha['id'] . '">Editar</a></td>';
+    echo '<td><a href="editar.php?id=' . $linha['id'] . '">Editar</a></td>';
+    echo '<td><a href="excluir.php?id=' . $linha['id'] . '">Excluir</a></td>';
     echo '</tr>';
 }
 echo '</table>';
