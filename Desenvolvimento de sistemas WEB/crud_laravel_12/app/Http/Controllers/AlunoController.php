@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Aluno;
 use App\Models\Turma;
+use App\Models\ContatoAluno;
 
 class AlunoController extends Controller
 {
@@ -123,6 +124,9 @@ class AlunoController extends Controller
     public function destroy(string $id)
     {
         $aluno = Aluno::find($id);
+        $id_contato_aluno = $aluno->contatoAluno->id;
+        $contato_aluno = ContatoAluno::find($id_contato_aluno);
+        $contato_aluno->delete();
         $aluno->delete();
         return redirect()->route('aluno.index');
     }
