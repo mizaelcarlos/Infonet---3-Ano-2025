@@ -26,7 +26,7 @@
         <div class="row mb-3">
             <div class="col-md-6">
                 <label for="telefone" class="form-label">Telefone</label>
-                <input type="text" class="form-control" name="telefone" id="telefone" value="{{ $aluno->contatoAluno->telefone }}">
+                <input type="text" class="form-control" name="telefone" id="telefone" value="{{ $aluno->contatoAluno?->telefone }}">
             </div>
         </div>
         <button type="submit">Salvar</button>

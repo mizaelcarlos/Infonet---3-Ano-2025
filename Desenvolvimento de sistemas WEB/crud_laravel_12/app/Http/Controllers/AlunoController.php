@@ -83,11 +83,14 @@ class AlunoController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $nome_arquivo = pathinfo($request->foto->getClientOriginalName(), PATHINFO_FILENAME);
-        $extensao_arquivo = $request->foto->getClientOriginalExtension();
-        $foto = $nome_arquivo . '-' . time() . '.' . $extensao_arquivo;
+        $foto = null;
+        if ($request->hasFile('foto')) {
+            $nome_arquivo = pathinfo($request->foto->getClientOriginalName(), PATHINFO_FILENAME);
+            $extensao_arquivo = $request->foto->getClientOriginalExtension();
+            $foto = $nome_arquivo . '-' . time() . '.' . $extensao_arquivo;
 
-        $request->foto->move(public_path('imagens'), $foto);
+            $request->foto->move(public_path('imagens'), $foto);
+        }
 
         $aluno = Aluno::find($id);
         $aluno->update([
@@ -95,14 +98,21 @@ class AlunoController extends Controller
             'nome' => $request->nome,
             'email' => $request->email,
             'data_nascimento' => $request->data_nascimento,
-            'foto' => 'imagens/' . $foto
+            'foto' => 'imagens/' . isset($foto) ? $foto : $aluno->foto
         ]);
 
         $aluno->turmas()->syncWithoutDetaching($request->turma_id);
 
-        $aluno->contatoAluno()->update([
-            'telefone' => $request->telefone
-        ]);
+        if ($aluno->contatoAluno) {
+            $aluno->contatoAluno->update([
+                'telefone' => $request->telefone
+            ]);
+        } else {
+            $aluno->contatoAluno()->create([
+                'telefone' => $request->telefone
+            ]);
+        }
+
 
         return redirect()->route('aluno.index');
     }
