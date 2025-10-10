@@ -16,6 +16,19 @@
         <label for="foto" class="form-label">Foto</label>
         <input type="file" name="foto" id="foto">
         <img src="{{ asset($aluno->foto) }}" alt="" style="max-width: 400px">
+        <label for="">Turma: </label>
+        <select name="turma_id" id="turma_id">
+            <option value="">Selecione</option>
+            @foreach ($turmas as $turma)
+                <option value="{{ $turma->id }}">{{ $turma->descricao }}</option>
+            @endforeach
+        </select>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="text" class="form-control" name="telefone" id="telefone" value="{{ $aluno->contatoAluno->telefone }}">
+            </div>
+        </div>
         <button type="submit">Salvar</button>
     </form>
 @endsection

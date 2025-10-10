@@ -32,6 +32,22 @@
                 <label for="foto" class="form-label">Foto</label>
                 <input type="file" name="foto" id="foto">
             </div>
+            <div class="col-md-6">
+                <label for="" class="form-label">Turma: </label>
+                <select class="form-control" name="turma_id" id="turma_id">
+                    <option value="">Selecione</option>
+                    @foreach ($turmas as $turma)
+                        <option value="{{ $turma->id }}">{{ $turma->descricao }}</option>
+                    @endforeach
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="text" class="form-control" name="telefone" id="telefone">
+            </div>
         </div>
 
         <button class="btn btn-primary" type="submit">Salvar</button>

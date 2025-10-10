@@ -6,5 +6,6 @@
      <p>Nome: {{ $aluno->nome }}</p>
     <p>Email: {{ $aluno->email }}</p>
     <p>Data de nascimento: {{ $aluno->data_nascimento }}</p>
+    <p>Telefone: {{ $aluno->contatoAluno->telefone }}</p>
     <img src="{{ asset($aluno->foto) }}" alt="" style="max-width: 400px">
 @endsection
