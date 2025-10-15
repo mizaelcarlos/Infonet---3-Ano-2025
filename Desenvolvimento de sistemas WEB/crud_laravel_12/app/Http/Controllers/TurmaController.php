@@ -13,7 +13,7 @@ class TurmaController extends Controller
      */
     public function index()
     {
-        $turmas = Turma::all();
+        $turmas = Turma::withCount('alunos')->get();
         return view('turma.index', compact('turmas'));
     }
 

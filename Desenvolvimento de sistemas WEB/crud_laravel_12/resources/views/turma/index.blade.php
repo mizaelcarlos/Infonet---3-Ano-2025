@@ -7,6 +7,7 @@
         <thead class="thead-light">
             <th>Descricao</th>
             <th>Curso</th>
+            <th>Quantidade de alunos</th>
             <th>Opções</th>
         </thead>
         <tbody>
@@ -14,6 +15,7 @@
             <tr class="table-warning">
                 <td>{{ $turma->descricao }}</td>
                 <td>{{ $turma->curso->nome }}</td>
+                <td>{{ $turma->alunos_count }}</td>
                 <td>
                     <div class="d-flex">
                         <div class="m-1">
