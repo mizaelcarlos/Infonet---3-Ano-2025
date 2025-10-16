@@ -23,9 +23,10 @@
 
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="login-container">
-            <h4 class="text-center mb-4">Sistema de Controle Acadêmico</h4>
+            <h4 class="mb-4 text-center">Sistema de Controle Acadêmico</h4>
 
-            <form action="/login" method="POST">
+            <form action="/login" method="POST" action="{{ route('login') }}">
+                @csrf
                 <div class="mb-3">
                     <label for="email" class="form-label">E-mail institucional</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@exemplo.com" required>
@@ -33,17 +34,13 @@
 
                 <div class="mb-3">
                     <label for="senha" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha" required>
                 </div>
 
                 <div class="d-grid">
                     <button type="submit" class="btn btn-primary">Entrar</button>
                 </div>
             </form>
-
-            <div class="mt-3 text-center">
-                <a href="#">Esqueceu a senha?</a>
-            </div>
         </div>
     </div>
 

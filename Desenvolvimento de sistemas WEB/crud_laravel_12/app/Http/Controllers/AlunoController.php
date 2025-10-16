@@ -19,6 +19,7 @@ class AlunoController extends Controller
         $aluno_id_maior_10 = Aluno::where('id', '>', 10)->count();
         $aluno2 = Aluno::where('id', '>', 10)
             ->where('nome', 'like', 'F%')->get();
+        $aluno = Aluno::whereDate('data_nascimento', '<', '2006-01-01');
         return view('aluno.index', compact('alunos', 'aluno_id_maior_10', 'aluno2'));
     }
 

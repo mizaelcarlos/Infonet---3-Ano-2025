@@ -1,0 +1,4 @@
+"id","nome","email","nickname","senha","foto","createdAt","updatedAt"
+"1","usuario01","usuario01@usuario.com","usuario_01","123456","usuario_01.jpg","2023-06-22 09:13:55","2023-06-22 09:14:55"
+"2","usuario02","usuario02@usuario.com","usuario_02","654321","usuario_02.jpg","2023-02-22 09:13:55","2023-02-22 09:13:58"
+"3","usuario03","usuario03@usuario.com","usuario_03","987654","usuario_03.jpg","2023-08-22 09:13:55","2023-08-22 09:15:55"

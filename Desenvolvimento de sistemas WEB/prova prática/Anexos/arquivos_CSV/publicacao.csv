@@ -1,0 +1,4 @@
+"id_publicacao","foto","titulo_prato","local","cidade","empresa_id","createdAt","updatedAt"
+"1","publicacao01.png","Titulo do Prato 01","Local 01","Maceio-AL","1","2023-02-22 09:15:55","2023-09-22 09:18:55"
+"2","publicacao02.png","Titulo do Prato 02","Local 02","Minas Gerais-MG","1","2023-02-22 09:10:55","2023-02-22 09:16:55"
+"3","publicacao03.png","Titulo do Prato 03","Local 03","Rio de Janerio-RJ","1","2023-05-22 09:13:55","2023-02-22 09:15:55"
