@@ -57,6 +57,7 @@
                     <li class="nav-item">
                         <div>
                             {{ Auth::user()->name }}
+                            <img src="{{ asset('Auth::user()->foto') }}" alt="">
                         </div>
                         <form method="POST" action="{{ route('logout') }}">
                         @csrf
