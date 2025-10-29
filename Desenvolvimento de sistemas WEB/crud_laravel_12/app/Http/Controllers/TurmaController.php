@@ -36,6 +36,13 @@ class TurmaController extends Controller
         return redirect()->route('turma.index');
     }
 
+    public function cadastrar(Request $request)
+    {
+        $turma = Turma::create($request->all());
+
+        return response()->json($turma);
+    }
+
     /**
      * Display the specified resource.
      */
@@ -45,8 +52,14 @@ class TurmaController extends Controller
         return view('turma.show', compact('turma'));
     }
 
+    public function consultar(string $id)
+    {
+        $turma = Turma::find($id);
+        return response()->json($turma);
+    }
+
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specified resource.''
      */
     public function edit(string $id)
     {
